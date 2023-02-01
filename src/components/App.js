@@ -1,3 +1,5 @@
+es (31 sloc)  1.13 KB
+
 import React,{useState} from 'react'
 import '../styles/App.css';
 import { BrowserRouter as Router ,Route,Switch ,Redirect,NavLink,Link} from 'react-router-dom' ;
@@ -21,7 +23,7 @@ const App = () => {
     
     <Switch>
       <Route path="/" exact>
-     <Login email={email} password={password} setLoggedIn={setLoggedIn} setNavigate={setNavigate}/>
+     {loggedIn ? <Redirect to="/dashboard"/>: <Login email={email} password={password} setLoggedIn={setLoggedIn} setNavigate={setNavigate}/>}
       </Route>
       
       <Route path="/Register" exact>
