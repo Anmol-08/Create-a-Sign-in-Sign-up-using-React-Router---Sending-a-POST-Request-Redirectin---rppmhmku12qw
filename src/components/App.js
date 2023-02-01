@@ -1,5 +1,3 @@
-es (31 sloc)  1.13 KB
-
 import React,{useState} from 'react'
 import '../styles/App.css';
 import { BrowserRouter as Router ,Route,Switch ,Redirect,NavLink,Link} from 'react-router-dom' ;
@@ -38,6 +36,5 @@ const App = () => {
 </div>
   )
 }
-
 
 export default App;
